@@ -25,12 +25,19 @@ body{
     align-items: center;
     gap: 20px;
 }
-.category{
+
+.category, .s_category{
     padding: 10px 15px;
     background: #2323;
     cursor: pointer;
+    border-radius: 3px;
 }
-.category:hover{
+.category_active{
+    padding: 10px 15px;
+    background: #2727 ;
+    cursor: pointer;
+}
+.category:hover, .s_category:hover{
     background: #2425;
 }
 .generate{
@@ -46,7 +53,7 @@ body{
     background: #2729;
 }
 .selected_categories{
-    background: red;
+    background: rgb(17, 78, 128);
     display: flex;
     justify-content: center;
     align-items: center;
