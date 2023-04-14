@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,25 +8,23 @@
     <link rel="stylesheet" href="style.css">
     <title>Random Joke Generator</title>
 </head>
+
 <body>
-    <div class="categories_div">
-        <h2>Select Categories:</h2>
-        <div class="categories">
-            <div class="category">Programming</div>
-            <div class="category">Miscellaneous</div>
-            <div class="category">Dark</div>
-            <div class="category">Pun</div>
-        </div>
-    </div>
-    <div class="selected_categories">
-        <h4>Selected Categories</h4>
-        <div class="s_category">All</div>
-    </div>
-    <div class="generate">Generate</div>
-    <div class="joke_div">
-        <h2>Joke -- <span class="generated_joke_category">Programming</span></h2>
-        <div class="joke">Joke will be displayed here after clicking on Generate</div>
+    <div>
+
+        <h1>It not so funny</h1>
+        <select id="type">
+            <option value="Programming">Programming</option>
+            <option value="Dark">Dark</option>
+            <option value="Pun">Pun</option>
+            <option value="Miscellaneous">Miscellaneous</option>
+        </select>
+        <button id="getJoke">Get Joke</button>
+        <br>
+        <br>
+        <h2><span id='joke'></span></h2>
     </div>
     <script src="./main.js"></script>
 </body>
+
 </html>
